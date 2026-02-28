@@ -1,11 +1,14 @@
-# 1. Build the package to register your changes
-colcon build --packages-select my_package
-
-# 2. Source the Global ROS environment
+# 1. Source the Global ROS environment
 source /opt/ros/foxy/setup.bash
 
-# 3. Source your local workspace so it knows about the new build
+# 2. Go to your code workspace
+cd /ros2_ws
+
+# 3. Build only your package to apply the file changes
+colcon build --packages-select my_package
+
+# 4. Source the fresh build
 source install/local_setup.bash
 
-# 4. Run your script
+# 5. Run the script normally
 python3 src/my_package/my_package/gap_finder_base.py
