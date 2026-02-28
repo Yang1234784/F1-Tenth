@@ -1,0 +1,2 @@
+source /opt/ros/foxy/setup.bash
+python3 /f1tenth_workshop/f1tenth_simulator/gap_finder_base.py
