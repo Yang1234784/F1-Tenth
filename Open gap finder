@@ -11,4 +11,4 @@ colcon build --packages-select my_package
 source install/local_setup.bash
 
 # 5. Run the script normally
-python3 src/my_package/my_package/gap_finder_base.py
+python3 /f1tenth_workshop/f1tenth_simulator/gap_finder_base.py
