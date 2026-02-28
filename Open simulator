@@ -1,4 +1,4 @@
-source /opt/ros/foxy/setup.bash
-cd /sim_ws
+cd /ros2_ws
+colcon build --packages-select my_package
 source install/local_setup.bash
-ros2 launch f1tenth_gym_ros gym_bridge_launch.py
+python3 src/my_package/my_package/gap_finder_base.py
