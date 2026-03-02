@@ -3,6 +3,7 @@
 # Key concept of the code
 We uses LiDAR data to find the safest and most open direction to drive. It removes unsafe regions near obstacles (safety bubble + disparity extension), then chooses a target direction with the largest available free space and converts that into steering and speed commands.
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 we first understand the meaning of the parameters and how they affect the car: 
 ## 1) lookahead_distance
 What it is: a cap on how far the algorithm “cares” about space.
