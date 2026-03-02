@@ -7,7 +7,6 @@ proc_ranges = np.where(proc_ranges > lookahead_distance, lookahead_distance, pro
 
 ### Effect
 Bigger → more “long-term” vision, tends to pick smoother directions, can go faster on straights.
-
 Smaller → reacts only to nearby space, can become twitchy and turn late.
 
 Too big risk: might ignore near obstacles because many directions look equally “maxed out” after clipping.
