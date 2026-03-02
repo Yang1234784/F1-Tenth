@@ -119,6 +119,3 @@ What they are: ROS topic names.
 /scan = where LiDAR data comes in
 
 /drive = where you publish speed + steering
-
-### Effect
-If these are wrong, your car won’t move (no scan / commands not received).
