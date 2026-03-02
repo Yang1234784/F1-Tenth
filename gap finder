@@ -11,18 +11,18 @@ class GapFollower(Node):
     def __init__(self):
         super().__init__('gap_follower')
  
-        self.declare_parameter('lookahead_distance', 6.5) 
+        self.declare_parameter('lookahead_distance', 5.5) 
         self.declare_parameter('robot_width', 0.2032)
-        self.declare_parameter('obstacle_bubble_radius', 0.20) 
-        self.declare_parameter('disparity_threshold', 0.5) 
-        self.declare_parameter('max_speed', 7.0) #10.0 
-        self.declare_parameter('min_speed', 1.0)
+        self.declare_parameter('obstacle_bubble_radius', 0.22) 
+        self.declare_parameter('disparity_threshold', 0.35) 
+        self.declare_parameter('max_speed', 6.8) #10.0 
+        self.declare_parameter('min_speed', 1.7)
         self.declare_parameter('max_steering', 0.34) 
-        self.declare_parameter('disparity_bubble_radius', 0.15)
-        self.declare_parameter('consecutive_valid_gap', 5)
-        self.declare_parameter('steering_gain', 0.5) 
-        self.declare_parameter('speed_gain', 1.0) 
-        self.declare_parameter('field_of_vision', np.pi/2)
+        self.declare_parameter('disparity_bubble_radius', 0.20)
+        self.declare_parameter('consecutive_valid_gap', 6)
+        self.declare_parameter('steering_gain', 0.48) 
+        self.declare_parameter('speed_gain', 3.0) 
+        self.declare_parameter('field_of_vision', 1.75)
         self.declare_parameter('lidarscan_topic', '/scan')
         self.declare_parameter('drive_topic', '/drive')
             
