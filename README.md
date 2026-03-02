@@ -119,3 +119,6 @@ What they are: ROS topic names.
 /scan = where LiDAR data comes in
 
 /drive = where you publish speed + steering
+
+# Key concept of the code
+We uses LiDAR data to find the safest and most open direction to drive. It removes unsafe regions near obstacles (safety bubble + disparity extension), then chooses a target direction with the largest available free space and converts that into steering and speed commands.
